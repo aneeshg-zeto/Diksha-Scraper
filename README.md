@@ -2,6 +2,8 @@
 
 Downloads chapter PDFs from all DIKSHA digital textbooks across every board, medium, and class.
 
+**Repo:** https://github.com/aneeshg-zeto/Diksha-Scraper
+
 ---
 
 ## For teammates — extracting PDFs
@@ -9,8 +11,8 @@ Downloads chapter PDFs from all DIKSHA digital textbooks across every board, med
 ### Step 1: Clone the repo
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/aneeshg-zeto/Diksha-Scraper.git
+cd Diksha-Scraper
 ```
 
 ### Step 2: Copy the downloads folder
@@ -18,7 +20,7 @@ cd YOUR_REPO
 Get the `downloads/` folder from the shared hard drive / Google Drive and place it inside the cloned repo folder so the structure looks like:
 
 ```
-YOUR_REPO/
+Diksha-Scraper/
   downloads/          ← copy this from the hard drive
   extract_pdfs.py
   requirements.txt
@@ -75,4 +77,4 @@ downloads/
 - Python 3.12+ — download from https://python.org/downloads
 - Internet connection (PDFs are downloaded from DIKSHA servers)
 - ~16 GB free space for the `downloads/` folder (ecars already downloaded)
-- Additional space for PDFs (estimated 50–100 GB depending on how many chapters have PDFs)
+- Additional space for PDFs (estimated 50–100 GB depending on chapters)

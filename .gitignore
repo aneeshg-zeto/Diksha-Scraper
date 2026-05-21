@@ -1,0 +1,33 @@
+# ── Downloaded content (too large for git) ────────────────────────────────────
+downloads/
+pdf_manifest.json
+
+# ── Auth / secrets (never commit these) ───────────────────────────────────────
+auth/
+*.json
+
+# Re-include non-secret json files that should be tracked
+!config.yaml
+
+# ── Python ────────────────────────────────────────────────────────────────────
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Logs and reports ──────────────────────────────────────────────────────────
+scraper.log
+*.log
+report.csv
+discovered_resources.json
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini

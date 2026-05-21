@@ -1,0 +1,39 @@
+diksha:
+  api_base_url: "https://diksha.gov.in/api"
+  search_endpoint: "/content/v1/search"
+  read_endpoint: "/content/v1/read"
+  framework_id: "ekstep_ncert_k-12"
+
+  filters:
+    boards: []
+    mediums: []
+    classes: []
+    subjects: []
+    content_types: ["Digital Textbook"]
+
+auth:
+  cookies_file: "auth/cookies.json"
+  token_file: "auth/token.json"
+  login_url: "https://diksha.gov.in/search/Library/1?id=ekstep_ncert_k-12&primaryCategory=digital%20textbook&se_mediums=english&&selectedTab=all"
+  profile_url: "https://diksha.gov.in/profile"
+  headless: false
+  login_timeout_seconds: 600
+
+download:
+  output_dir: "downloads"
+  manifest_file: "downloads/manifest.json"
+  concurrent_downloads: 3
+  chunk_size_bytes: 65536
+  retry_attempts: 3
+  retry_delay_seconds: 5
+  preferred_format: "pdf"   # pdf | epub | auto (picks largest)
+
+reporting:
+  discovered_resources_file: "discovered_resources.json"
+  csv_report_file: "report.csv"
+
+scraper:
+  dry_run: false
+  request_delay_seconds: 0.5   # polite delay between API calls
+  request_timeout_seconds: 30
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
